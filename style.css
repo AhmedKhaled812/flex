@@ -7,6 +7,7 @@
 }
 
 
+
 header {background-image: url("img/5.jpeg");
     background-position:bottom;
     height:100vh;
@@ -19,12 +20,17 @@ header {background-image: url("img/5.jpeg");
 a {text-decoration: none;;}
 
 
-header .hero {display: flex;justify-content: space-between;
-    align-items: center; padding:  20px;
+ .hero {display: grid;grid-template-columns: repeat(3,1fr);
+    align-items: center; padding:  20px; 
+    gap: 1em;
+    max-width: 800px;
+
+    margin: 0 auto;
+    text-align: center;
 }
 
 
-.neav-area {display: flex;}
+.neav-area {display: grid;grid-template-columns: repeat(5,1fr );}
 
 .neav-area li {list-style: none;padding: 0 15px;text-transform: uppercase;}
 
@@ -37,7 +43,7 @@ header .hero {display: flex;justify-content: space-between;
 
 .btn-area {border-radius: 5px; color: #fff;background-color:darkcyan;
 
-    padding: 10px 30px ;letter-spacing: 2px;}
+    padding: 10px 30px ;letter-spacing: 2px;text-align: center;}
 
 
     .btn-area:hover {background-color: darkgray;color: black;}
@@ -47,8 +53,10 @@ header .hero {display: flex;justify-content: space-between;
 
         header .hero, .neav-area {display: inline;text-align: center;}
 
-        .neav-area li {padding: 5px;
-                        }
+        .neav-area li {padding: 5px;}
+
+
+
 
 
         .btn-area {text-align: center;display: block;}
